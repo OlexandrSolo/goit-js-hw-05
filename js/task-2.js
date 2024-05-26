@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {Array} users 
+ * @param {string} friendName 
+ * @returns an array of user objects with a common friends
+ */
 const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName))
 
 const allUsers = [
@@ -31,7 +37,7 @@ const allUsers = [
   }
 ];
 
-console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
+console.log("TASK-2:",getUsersWithFriend(allUsers, "Briana Decker")); 
 // [
 //   {
 //     name: "Sharlene Bush",
@@ -43,7 +49,7 @@ console.log(getUsersWithFriend(allUsers, "Briana Decker"));
 //   }
 // ]
 
-console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+console.log("TASK-2:",getUsersWithFriend(allUsers, "Goldie Gentry"));
 // [
 //   {
 //     name: "Elma Head",
@@ -55,4 +61,4 @@ console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
 //   }
 // ]
 
-console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+console.log("TASK-2:", getUsersWithFriend(allUsers, "Adrian Cross" )); // []

@@ -1,7 +1,12 @@
-const getUserNames = users => users.map(user=>user.name)
+/**
+ * 
+ * @param {Array} users 
+ * @returns {Array} return an array of names from an object
+ */
+const getUserNames = users => users.map(user => user.name)
 
 
-console.log(
+console.log("TASK-1:",
   getUserNames([
   {
     name: "Moore Hensley",

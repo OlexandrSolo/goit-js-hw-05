@@ -1,6 +1,13 @@
-const sortByDescendingFriendCount = users => users.toSorted((previousFriend, nextFried) => nextFried.friends.length - previousFriend.friends.length)
+/**
+ * 
+ * @param {Array} users 
+ * @returns an array of objects sorted in descending order according to the number of friends they have.
+ */
 
-console.log(
+const sortByDescendingFriendCount = users => users.toSorted((previousFriend, nextFried) =>
+  nextFried.friends.length - previousFriend.friends.length)
+
+console.log("TASK-3:",
   sortByDescendingFriendCount([
     {
       name: "Moore Hensley",

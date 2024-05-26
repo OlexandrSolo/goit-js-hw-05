@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {Array} users 
+ * @param {string} gender 
+ * @returns {number} overall balance of the respective gender
+ */
 const getTotalBalanceByGender = (users, gender) => {
     const filterArr = users.filter(element => element.gender === gender);
     const total = filterArr.reduce((sum, element) => { return sum + element.balance }, 0);
@@ -42,6 +48,6 @@ const clients = [
   }
 ];
 
-console.log(getTotalBalanceByGender(clients, "male")); // 12053
+console.log("TASK-4:",getTotalBalanceByGender(clients, "male")); // 12053
 
-console.log(getTotalBalanceByGender(clients, "female")); // 8863
+console.log("TASK-4:",getTotalBalanceByGender(clients, "female")); // 8863
